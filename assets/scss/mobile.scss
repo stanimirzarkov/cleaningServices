@@ -1,0 +1,106 @@
+@import "variables";
+@media (max-width: 1680px){
+    .resize-section{
+        .video-bg{
+            /*min-height: 580px;*/
+            .text-area{
+                margin-top: 180px;
+            }
+        }
+    }
+}
+@media (max-width: 1366px){
+    .resize-section{
+        .video-bg{
+            .text-area{
+                margin-top: 180px;
+            }
+        }
+        .bg-lines{
+            background-size: 200%;
+        }
+        &.contact section .map{
+            svg{
+                top:-164px;
+            }
+        }
+    }
+}
+@media (max-width: 1024px){
+    .resize-section.contact section{
+        .map svg {
+            top: -100px;
+        }
+        .address{
+            left: 40px;
+        }
+    }
+
+}
+@media (max-width: 992px){
+    .resize-section {
+        .video-bg {
+            /*min-height: 420px;*/
+            .text-area{
+                margin-top: 80px;
+                left: 0;
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    .hidden-xs{
+        display: none !important;
+    }
+    .section-making-world{
+        padding: 140px 0;
+    }
+    .resize-section.contact section{
+        .wave{
+            display: none;
+        }
+        .address{
+            left: 0;
+            top: -1px;
+            padding: 30px 15px;
+            background: $white;
+            width: 200px;
+            border-radius: 0 0 180% 0;
+        }
+    }
+    .about .profile.full .outline{
+        width: calc(100% - 30px);
+    }
+}
+@media (max-width: 767px){
+    header{
+        padding: 16px;
+    }
+    nav{
+        width: 100%;
+        left: -100%;
+    }
+    .bg-lines{
+        background-image: none;
+    }
+    .wave{
+        display: none;
+    }
+    .resize-section{
+        .video-bg{
+            height: 380px;
+            video{
+                position: absolute;
+                height: 100%;
+                width: auto;
+            }
+            .text-area{
+                margin-top: 130px;
+            }
+        }
+    }
+    .medications.bg-lines,
+    .section-making-world{
+        padding: 80px 0;
+    }
+}

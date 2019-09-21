@@ -1,0 +1,19 @@
+@mixin base-link($color, $border-color){
+    color: $color;
+    text-decoration: none;
+    &:focus,
+        &:hover,
+        &:active{
+        color: $color;
+        text-decoration: none;
+        span{
+            transition: .2s;
+            border-bottom-color:transparent;        
+        }
+    }
+    span{
+        transition: .2s;
+        border-bottom: 1px solid $border-color;        
+    }
+
+}
