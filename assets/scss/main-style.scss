@@ -23,23 +23,22 @@ main{
     // background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-.heroshot{
-    background-color: $black;
-    max-height: 100vh;
-    overflow: hidden;
-    >video{
-        width: 100%;
-        height: auto;
-        opacity: .35;
-    }
+header{
+    padding-top: 70px;
     nav{
         position: fixed;
         top: 0;
         left: 0;
-        background-color: rgba(0,0,0,.5);
+        background-color: $white;
         width: 100%;
         z-index: 100;
+        height: 70px;
+        img{
+            height:70px;
+            padding: 16px 0 16px 32px;
+        }
         ul{
+            float: right;
             text-align: right;
             padding: 16px 32px;
             li{
@@ -47,11 +46,33 @@ main{
                 padding: 0 8px;
                 line-height: 1.5;
                 a{
-                    @include base-link($white, $green)
+                    @include base-link($black, $green)
                 }
             }
         }
     } 
+}
+.heroshot{
+    height: 80vh;
+    background-image: url('../images/heroshot.jpg');
+    background-size: cover;
+    max-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    .background-transparence{
+        background-color: rgba(0, 0, 0, .5);
+        z-index: 10;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top:0;
+        left: 0;
+    }
+    >video{
+        width: 100%;
+        height: auto;
+        opacity: .35;
+    }
     .middle-aligned{
         width: 769px;
         max-width: 100%;

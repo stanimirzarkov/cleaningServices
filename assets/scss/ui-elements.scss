@@ -20,6 +20,35 @@
         outline: none;
     }
 }
+.button{
+    max-width: 80%;
+    border-radius: 5px;
+    border: 5px solid white;
+    color: white;
+    font-size: 24px;
+    padding: 32px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    &:hover{
+        /*background: transparent;*/
+        transition: .2s;
+        text-decoration: none;
+        color: white;
+    }
+    &:focus,
+        &:active,
+        &:visited{
+        outline: none;
+        text-decoration: none;
+        color: white;
+
+    }
+}
 .btn-xl{
     padding: 16px 24px;
     height: 52px;
